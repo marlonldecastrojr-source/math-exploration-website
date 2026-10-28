@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELA - Choose Your Grade</title>
+
+    <style>
+    
+        * {
+            box-sizing: border-box;
+        }
+
+           body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("meth.png.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #29245c;
+}
+
+/* BACK TO HOME BUTTON */
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ffcf45;
+    color: #29245c;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #ffb928;
+    transform: scale(1.05);
+}
+
+        /* TOP NAVIGATION */
+        nav {
+            background: #17143d;
+            color: white;
+            padding: 186px 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: none;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffbd45;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav-buttons a {
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+
+        /* PAGE HEADING */
+        header {
+            text-align: center;
+            padding: 35px 15px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #68647d;
+            font-size: 15px;
+        }
+
+        /* GRADE CARDS */
+        .grade-container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: 15px auto 45px;
+            padding: 0 20px;
+        }
+
+        .grade-card {
+            background: white;
+            text-align: center;
+            padding: 25px 18px;
+            border-radius: 22px;
+            border-top: 6px solid;
+            box-shadow: 0 5px 18px rgba(45, 35, 90, 0.10);
+            transition: transform 0.2s;
+        }
+
+        .grade-card:hover {
+            transform: translateY(-6px);
+        }
+
+/* Grade 4 background */
+.grade-card:nth-child(1) {
+    background-image: url("grade4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Grade 5 background */
+.grade-card:nth-child(2){
+   background-image: url("grdae10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Grade 6 background */
+.grade-card:nth-child(3) {
+    background-image: url("grade6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+        .character {
+            font-size: 55px;
+            margin-bottom: 12px;
+        }
+
+        .grade-card h2 {
+            font-size: 23px;
+            margin: 8px 0 14px;
+        }
+
+        .adventure {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #55516e;
+        }
+
+        .description {
+            font-size: 14px;
+            line-height: 1.7;
+            min-height: 48px;
+            color: #68647d;
+        }
+
+        /* GRADE BUTTONS */
+        .enter-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #ffcf45;
+            color: #29245c;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 13px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .enter-btn:hover {
+            background: #ffb928;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 700px) {
+            .grade-container {
+                grid-template-columns: 1fr;
+                max-width: 420px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+     <!-- BACK TO HOME BUTTON -->
+    <a href="Megan.html" class="home-btn">🏠 Back to Home</a>
+
+    <header>
+        <h1>Choose Your Grade! 🎒</h1>
+        <p>Every grade has its own cartoon world.
+           Choose your grade to open your special adventure!</p>
+    </header>
+
+    <main class="grade-container">
+
+        <!-- GRADE 4 -->
+        <section class="grade-card grade4">
+            <div class="character">🦊</div>
+            <a href="grade4.html" class="enter-btn">
+                Enter Jungle Math 🌿
+            </a>
+        </section>
+
+        <!-- GRADE 5 -->
+        <section class="grade-card grade5">
+            <div class="character">🐰</div>
+            <a href="grade5.html" class="enter-btn">
+                Enter Candyland 🍭
+            </a>
+        </section>
+
+        <!-- GRADE 6 -->
+        <section class="grade-card grade6">
+            <div class="character">🦉</div>
+            <a href="grade6.html" class="enter-btn">
+                Launch Space Quest 🌎
+            </a>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>

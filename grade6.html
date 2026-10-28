@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MELA Math Challenges</title>
+
+    <style>
+     * {
+            box-sizing: border-box;
+        }
+
+           body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("meth.png.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #29245c;
+}
+
+        .section-title {
+            text-align: center;
+            color: #174ea6;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            text-align: center;
+            color: #555;
+            margin-bottom: 35px;
+        }
+
+        /* Four boxes in one row */
+        .activities-container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .activity-box {
+            background: #ffffff;
+            padding: 25px 18px;
+            border-radius: 18px;
+            text-align: center;
+            border-bottom: 6px solid #3984e8;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .activity-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .activity-icon {
+            font-size: 48px;
+            margin-bottom: 18px;
+        }
+
+        .activity-box h2 {
+            color: #174ea6;
+            font-size: 20px;
+            margin-bottom: 14px;
+            min-height: 48px;
+        }
+
+        .activity-box p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+            min-height: 90px;
+            margin-bottom: 20px;
+        }
+
+        .play-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #2878df;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .play-button:hover {
+            background: #174ea6;
+        }
+
+        /* Tablet */
+        @media (max-width: 1000px) {
+            .activities-container {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 550px) {
+            .activities-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="section-title">MELA Math Challenges</h1>
+
+    <p class="section-description">
+        Explore, solve problems, and bring your ideas to life!
+    </p>
+
+    <div class="activities-container">
+
+        <!-- BOX 1: MATH MARKET CHALLENGE -->
+        <div class="activity-box">
+            <div class="activity-icon">🛒</div>
+            <h2>MATH MARKET CHALLENGE</h2>
+            <p>
+                Shop smart, calculate prices, and solve
+                exciting math challenges using money
+                and basic operations.
+            </p>
+            <a href="#" class="play-button">Play Now</a>
+        </div>
+
+        <!-- BOX 2: MATH DETECTIVE -->
+        <div class="activity-box">
+            <div class="activity-icon">🔎</div>
+            <h2>MATH DETECTIVE</h2>
+            <p>
+                Become a math detective! Find clues,
+                solve number puzzles, and use your
+                logical thinking to crack each case.
+            </p>
+            <a href="#" class="play-button">Play Now</a>
+        </div>
+
+        <!-- BOX 3: JUNIOR ARCHITECT -->
+        <div class="activity-box">
+            <div class="activity-icon">🏗️</div>
+            <h2>JUNIOR ARCHITECT</h2>
+            <p>
+                Explore shapes, measure lengths,
+                and discover how math helps you
+                design and build structures.
+            </p>
+            <a href="#" class="play-button">Play Now</a>
+        </div>
+
+        <!-- BOX 4: DESIGN YOUR DREAM PLAYGROUND -->
+        <div class="activity-box">
+            <div class="activity-icon">🎡</div>
+            <h2>DESIGN YOUR DREAM PLAYGROUND</h2>
+            <p>
+                Plan your dream playground using
+                shapes, measurements, and space
+                to create a fun place to play.
+            </p>
+            <a href="#" class="play-button">Play Now</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
